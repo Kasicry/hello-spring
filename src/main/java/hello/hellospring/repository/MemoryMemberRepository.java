@@ -9,7 +9,7 @@ import java.util.*;
 public class MemoryMemberRepository implements MemberRepository{
 
 
-    // HashMap - 키나 값에 Null 저장이 가능하다.
+    // HashMap - 키나 값에 Null 저장이 가능
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L; // 실무에서는 동시성문제 때문에 AtomicLong을 사용
 

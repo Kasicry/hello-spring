@@ -38,6 +38,10 @@ public class MemoryMemberRepository implements MemberRepository{
 
         return new ArrayList<>(store.values());
     }
+
+    public void clearStore() {
+        store.clear(); //내부 데이터 모두 비움
+    }
 }
 
-// 검증하는 가장 좋은방법은 테스트케이스를 작성하는 것!
+// 검증하는 가장 좋은방법은 테스트케이스를 작성하는 것! -- Junit
